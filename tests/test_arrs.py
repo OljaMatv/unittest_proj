@@ -8,6 +8,9 @@ class TestArrs(unittest.TestCase):
         self.assertEqual(arrs.get([1], 0, "test"), 1)
         self.assertNotEqual(arrs.get([1, 2, 3], -1), [])
 
+    if __name__ == '__main__':
+        unittest.main()
+
     def test_slice(self):
         self.assertEqual(arrs.my_slice([1, 2, 3, 4], 1, 3), [2, 3])
         self.assertEqual(arrs.my_slice([1, 2, 3], 1), [2, 3])
